@@ -6,7 +6,7 @@ if("geolocation" in navigator){
     loadWeather("kolkata, IN", "");
 }
 $(documnet).ready(function() {
-    setInterval(getWeather,10000);
+    setInterval(loadWeather(location),10000);
 
 });
 function loadWeather(location, woeid){ 
